@@ -1,1 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
 
