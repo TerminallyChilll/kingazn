@@ -17,4 +17,10 @@ body {
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
 }
+.popular-img.enlarged {
+  transform: scale(2);
+  position: relative;
+  z-index: 10;
+  cursor: zoom-out;
+}
 
