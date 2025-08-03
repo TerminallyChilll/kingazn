@@ -1,0 +1,27 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.hero {
+  height: 80vh;
+  background: url('https://via.placeholder.com/1200x600') center center / cover no-repeat;
+  padding: 80px 20px;
+  position: relative;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-weight: bold;
+}
