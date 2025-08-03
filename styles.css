@@ -23,4 +23,7 @@ body {
   z-index: 10;
   cursor: zoom-out;
 }
+.modal-content img {
+  cursor: zoom-out;
+}
 
