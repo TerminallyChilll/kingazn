@@ -1,102 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>King Asian - Traditional Chinese Food</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
-    />
-  </head>
-  <body>
-    <nav class="container-fluid">
-      <ul>
-        <li><strong>King Asian</strong></li>
-      </ul>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#" role="button">Order Now</a></li>
-      </ul>
-    </nav>
-
-    <main class="container">
-      <div class="grid">
-        <section>
-          <hgroup>
-            <h2>Welcome to King Asian</h2>
-            <h3>Delicious, Traditional Chinese Cuisine</h3>
-          </hgroup>
-          <p>
-            At King Asian, we serve up generous portions of classic Chinese
-            dishes made with love and rich, authentic flavors. Whether you’re
-            craving crispy dumplings, savory stir-fry, or sweet and sour
-            favorites, our menu has something for every appetite.
-          </p>
-
-          <figure>
-            <img
-              src="https://via.placeholder.com/800x600.png?text=King+Asian+Food+Image"
-              alt="Delicious Chinese food from King Asian"
-            />
-            <figcaption>
-              <a href="#" target="_blank">See more dishes from our menu</a>
-            </figcaption>
-          </figure>
-
-          <h3>Big Portions, Big Flavor</h3>
-          <p>
-            We believe in value and satisfaction. Our dishes are prepared fresh
-            and served in hearty portions perfect for sharing — or not!
-          </p>
-
-          <h3>Serving the Local Community</h3>
-          <p>
-            We’re proud to serve our neighborhood with fast, friendly service
-            and unforgettable meals. Dine in, take out, or order delivery —
-            we’ve got you covered!
-          </p>
-        </section>
-      </div>
-    </main>
-
-    <section aria-label="Subscribe example">
-      <div class="container">
-        <article>
-          <hgroup>
-            <h2>Stay in Touch</h2>
-            <h3>Sign up for menu updates and special offers</h3>
-          </hgroup>
-          <form class="grid">
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              placeholder="Your name"
-              aria-label="First name"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email address"
-              aria-label="Email address"
-              required
-            />
-            <button type="submit" onclick="event.preventDefault()">
-              Subscribe
-            </button>
-          </form>
-        </article>
-      </div>
-    </section>
-
-    <footer class="container">
-      <small>
-        <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
-      </small>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>King Asian - Traditional Chinese Food</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #a53923;
+      color: #fff;
+      min-height: 100vh;
+    }
+    .centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .crown {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+      font-size: 2.4rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #ffcda8;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    .btn-menu {
+      background: #fff;
+      color: #a53923;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 12px 32px;
+      margin: 20px 0;
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-menu:hover {
+      background: #ffcda8;
+      color: #a53923;
+    }
+    .food-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 36px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .food-row img {
+      width: 175px;
+      height: 175px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fff5e1;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      background: #fff6e9;
+    }
+    @media (max-width: 800px) {
+      .food-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="centered">
+    <div class="crown">&#9819;</div>
+    <h1>KING ASIAN</h1>
+    <h2>TRADITIONAL CHINESE FOOD</h2>
+    <div class="subtitle">Delicious and satisfying, serving the local area</div>
+    <button class="btn-menu">VIEW MENU</button>
+    <div class="food-row">
+      <!-- Replace these image URLs with your own dish images -->
+      <img src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg" alt="Lo Mein noodles">
+      <img src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg" alt="Sweet & sour chicken">
+      <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg" alt="Dumplings">
+      <img src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg" alt="Fried rice">
+      <img src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg" alt="Fried rice">
+    </div>
+  </div>
+</body>
 </html>
