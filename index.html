@@ -101,26 +101,61 @@
       <img src="https://images.pexels.com/photos/29160634/pexels-photo-29160634.jpeg" alt="Fried rice">
      </div>
   </div>
-  <!-- Specials Section -->
-<div class="specials-section">
-  <h2 class="specials-header">Specials</h2>
-  <div class="specials-grid">
-    <div class="special-offer">
-      <div class="special-title">$30+ Bonus</div>
-      <div class="special-detail">
-        <strong>FREE</strong> Spring Rolls<br>
-        <span>or French Fries <br>with any order over $30</span>
-      </div>
-    </div>
-    <div class="special-offer">
-      <div class="special-title">$50+ Bonus</div>
-      <div class="special-detail">
-        <strong>FREE</strong> Spring Roll, Fried Dumpling, Torpedo Shrimp,
-        Coconut Shrimp, <br>or Sesame Balls<br>
-        <span>with any order over $50</span>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
-</html>
+ .specials-section {
+  max-width: 700px;
+  margin: 56px auto 0 auto;
+  text-align: center;
+}
+.specials-header {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+.specials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.special-offer {
+  background: #fff3e4;
+  color: #a53923;
+  padding: 28px 24px;
+  border-radius: 18px;
+  min-width: 240px;
+  max-width: 320px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  font-size: 1.18rem;
+  font-weight: 500;
+  text-align: center;
+  border: 2px solid #f2c197;
+}
+.special-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.special-detail strong {
+  color: #e13b2e;
+  font-weight: 800;
+  font-size: 1.16em;
+}
+.special-detail span {
+  display: block;
+  margin-top: 6px;
+  font-size: 1em;
+  color: #ae5b28;
+}
+@media (max-width: 700px) {
+  .specials-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .special-offer {
+    min-width: 0;
+    width: 90%;
+  }
+}
+
