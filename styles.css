@@ -94,12 +94,10 @@ body, html {
 }
 @media (max-width: 700px) {
   .specials-grid {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    flex-direction: row; /* keep side by side */
+    flex-wrap: wrap;     /* allow wrapping if too small */
   }
   .special-offer {
-    min-width: 0;
-    width: 90%;
+    width: 45%; /* shrink to fit smaller screens */
   }
 }
